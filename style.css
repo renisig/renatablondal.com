@@ -530,7 +530,7 @@ img {
 }
 
 .work-card {
-    flex: 1 1 200px;
+    flex: 0 0 220px;
     scroll-snap-align: start;
     border: 1px solid var(--border);
     border-radius: 4px;
