@@ -844,6 +844,19 @@ img {
         order: -1;
     }
 
+    .about-photo img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    .interests-intro {
+        max-width: 100%;
+    }
+
+    .hobby-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .project-card {
         grid-template-columns: 1fr;
     }
@@ -869,6 +882,10 @@ img {
 
 @media (max-width: 480px) {
     .interests-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hobby-list {
         grid-template-columns: 1fr;
     }
 
