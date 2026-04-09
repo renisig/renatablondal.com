@@ -651,7 +651,11 @@ img {
 .section-contact {
     max-width: 100%;
     background: var(--text);
-    padding: var(--space-xl) var(--space-md);
+    padding: var(--space-lg) var(--space-md);
+}
+
+.section-contact .section-header {
+    margin-bottom: var(--space-md);
 }
 
 .contact-inner {
