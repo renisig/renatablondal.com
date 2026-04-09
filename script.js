@@ -63,7 +63,7 @@
 
             function updateArrows() {
                 leftBtn.classList.toggle('hidden', track.scrollLeft <= 0);
-                rightBtn.classList.toggle('hidden', track.scrollLeft + track.clientWidth >= track.scrollWidth - 1);
+                rightBtn.classList.toggle('hidden', track.scrollLeft + track.clientWidth >= track.scrollWidth - 100);
             }
 
             leftBtn.addEventListener('click', function () {

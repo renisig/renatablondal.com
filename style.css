@@ -803,6 +803,14 @@ img {
         max-width: 300px;
     }
 
+    .about-row {
+        grid-template-columns: 1fr;
+    }
+
+    .about-photo {
+        order: -1;
+    }
+
     .project-card {
         grid-template-columns: 1fr;
     }
