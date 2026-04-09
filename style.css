@@ -230,17 +230,6 @@ img {
     object-fit: cover;
 }
 
-.hero-greeting {
-    font-family: var(--font-body);
-    font-size: 0.85rem;
-    font-weight: 400;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: var(--space-sm);
-    opacity: 0;
-    animation: fadeUp 0.8s ease 0.3s forwards;
-}
 
 .hero-name {
     font-family: var(--font-display);
@@ -276,24 +265,7 @@ img {
     animation-delay: 1.15s;
 }
 
-.scroll-hint {
-    position: absolute;
-    bottom: var(--space-lg);
-    left: var(--space-md);
-    display: flex;
-    align-items: center;
-    gap: var(--space-xs);
-    font-size: 0.75rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--text-soft);
-    opacity: 0;
-    animation: fadeUp 0.8s ease 1.4s forwards;
-}
 
-.scroll-hint svg {
-    animation: bobDown 2s ease-in-out infinite;
-}
 
 /* ── Sections ─────────────────────── */
 .section {
@@ -375,6 +347,10 @@ img {
     object-position: center center;
 }
 
+.project-image img.img-nova {
+    object-position: center 70%;
+}
+
 .project-info {
     display: flex;
     flex-direction: column;
@@ -402,17 +378,7 @@ img {
     line-height: 1.7;
 }
 
-.project-link {
-    font-size: 0.85rem;
-    font-weight: 400;
-    color: var(--accent);
-    margin-top: var(--space-xs);
-    transition: color 0.3s ease;
-}
 
-.project-link:hover {
-    color: var(--accent-hover);
-}
 
 /* ── Interests ────────────────────── */
 .interests-layout {
@@ -502,32 +468,6 @@ img {
     display: none;
 }
 
-.carousel-card {
-    flex: 0 0 200px;
-    scroll-snap-align: start;
-    padding: var(--space-md);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    background: var(--white);
-    transition: border-color 0.3s ease;
-}
-
-.carousel-card:hover {
-    border-color: var(--accent);
-}
-
-.carousel-card h4 {
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: var(--space-xs);
-}
-
-.carousel-card p {
-    font-size: 0.85rem;
-    color: var(--text-soft);
-    line-height: 1.6;
-}
 
 .work-card {
     flex: 0 0 220px;
@@ -704,14 +644,6 @@ img {
     color: var(--bg);
 }
 
-.contact-text {
-    font-family: var(--font-display);
-    font-size: 1.4rem;
-    line-height: 1.7;
-    color: rgba(245, 240, 235, 0.7);
-    max-width: 500px;
-    margin-bottom: var(--space-lg);
-}
 
 .contact-links {
     display: flex;
@@ -787,10 +719,6 @@ img {
     }
 }
 
-@keyframes bobDown {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(6px); }
-}
 
 /* Scroll reveal */
 .reveal {
@@ -865,14 +793,6 @@ img {
         min-height: 160px;
     }
 
-    .interests-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .reads-grid {
-        grid-template-columns: 1fr;
-    }
-
     .contact-link {
         flex-direction: column;
         align-items: flex-start;
@@ -897,7 +817,4 @@ img {
         font-size: 1.8rem;
     }
 
-    .scroll-hint {
-        display: none;
-    }
 }
