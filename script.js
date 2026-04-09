@@ -52,6 +52,33 @@
     window.addEventListener('scroll', checkReveal, { passive: true });
     window.addEventListener('load', checkReveal);
 
+    // ── Carousel arrows ───────────────
+    document.querySelectorAll('.carousel').forEach(function (carousel) {
+        var track = carousel.querySelector('.carousel-track');
+        var leftBtn = carousel.querySelector('.carousel-arrow-left');
+        var rightBtn = carousel.querySelector('.carousel-arrow-right');
+
+        if (leftBtn && rightBtn && track) {
+            var scrollAmount = 280;
+
+            function updateArrows() {
+                leftBtn.classList.toggle('hidden', track.scrollLeft <= 0);
+                rightBtn.classList.toggle('hidden', track.scrollLeft + track.clientWidth >= track.scrollWidth - 1);
+            }
+
+            leftBtn.addEventListener('click', function () {
+                track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
+
+            rightBtn.addEventListener('click', function () {
+                track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+
+            track.addEventListener('scroll', updateArrows, { passive: true });
+            updateArrows();
+        }
+    });
+
     // ── Smooth scroll for nav links ───
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
