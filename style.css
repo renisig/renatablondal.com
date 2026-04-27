@@ -593,6 +593,17 @@ img {
     border-color: var(--accent);
 }
 
+.read-card-tag {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: var(--space-xs);
+    text-align: center;
+    line-height: 1.4;
+}
+
 .read-card-image {
     width: 80%;
     height: 260px;

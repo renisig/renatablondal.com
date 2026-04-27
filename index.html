@@ -241,6 +241,7 @@
             </button>
             <div class="carousel-track">
                 <article class="read-card reveal">
+                    <span class="read-card-tag">Leiðtogafærni, árangursríkar yfirtökur</span>
                     <div class="read-card-image">
                         <img loading="lazy" src="Mæli með/rideofalifetime.png" alt="The Ride of a Lifetime">
                     </div>
@@ -249,6 +250,7 @@
                 </article>
 
                 <article class="read-card reveal">
+                    <span class="read-card-tag">Mannaforráð, árangursmenning</span>
                     <div class="read-card-image">
                         <img loading="lazy" src="Mæli með/idealteamplayer2.jpeg" alt="The Ideal Team Player">
                     </div>
@@ -257,6 +259,7 @@
                 </article>
 
                 <article class="read-card reveal">
+                    <span class="read-card-tag">Áræðni, strategía, vöxtur</span>
                     <div class="read-card-image">
                         <img loading="lazy" src="Mæli með/shoedog.png" alt="Shoe Dog">
                     </div>
@@ -265,6 +268,7 @@
                 </article>
 
                 <article class="read-card reveal">
+                    <span class="read-card-tag">Viðhorf, starfsmannakúltúr, árangur</span>
                     <div class="read-card-image">
                         <img loading="lazy" src="Mæli með/new-fish-book-cover-mockUp-2020_669x.webp" alt="Fish">
                     </div>
@@ -273,6 +277,7 @@
                 </article>
 
                 <article class="read-card reveal">
+                    <span class="read-card-tag">Vöruþróun, viðskiptavinurinn, aðferðafræði</span>
                     <div class="read-card-image">
                         <img loading="lazy" src="Mæli með/design-sprint-book-preparation-materials.jpg" alt="Sprint">
                     </div>
@@ -309,6 +314,19 @@
     </footer>
 
     <script src="script.js"></script>
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ed97d4f5a2f642edb9a4b0e9a0dca521"}'></script><!-- End Cloudflare Web Analytics -->
+    <!-- Cloudflare Web Analytics (skips owner via localStorage flag set by ?notrack URL param) -->
+    <script>
+        (function () {
+            if (new URLSearchParams(location.search).has('notrack')) {
+                localStorage.setItem('notrack', '1');
+            }
+            if (localStorage.getItem('notrack') === '1') return;
+            var s = document.createElement('script');
+            s.defer = true;
+            s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+            s.setAttribute('data-cf-beacon', '{"token": "ed97d4f5a2f642edb9a4b0e9a0dca521"}');
+            document.head.appendChild(s);
+        })();
+    </script>
 </body>
 </html>
