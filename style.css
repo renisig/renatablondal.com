@@ -571,6 +571,7 @@ img {
 /* ── Recommended Reads ────────────── */
 .reads-carousel .carousel-track {
     gap: var(--space-md);
+    scroll-snap-type: none;
 }
 
 .read-card {
@@ -586,6 +587,7 @@ img {
     text-align: center;
     transition: border-color 0.3s ease;
 }
+
 
 .read-card:hover {
     border-color: var(--accent);
