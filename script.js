@@ -67,11 +67,14 @@
             }
 
             leftBtn.addEventListener('click', function () {
-                track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                var target = track.scrollLeft - scrollAmount;
+                track.scrollTo({ left: target < scrollAmount ? 0 : target, behavior: 'smooth' });
             });
 
             rightBtn.addEventListener('click', function () {
-                track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                var maxScroll = track.scrollWidth - track.clientWidth;
+                var target = track.scrollLeft + scrollAmount;
+                track.scrollTo({ left: target > maxScroll - scrollAmount ? maxScroll : target, behavior: 'smooth' });
             });
 
             track.addEventListener('scroll', updateArrows, { passive: true });
