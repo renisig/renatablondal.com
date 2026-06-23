@@ -119,6 +119,24 @@ img {
     width: 100%;
 }
 
+.nav-links a.lang-toggle,
+.mobile-menu a.lang-toggle {
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    margin-left: var(--space-sm);
+    font-weight: 500;
+}
+
+.nav-links a.lang-toggle:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.nav-links a.lang-toggle::after {
+    display: none;
+}
+
 .nav-toggle {
     display: none;
     background: none;
@@ -575,7 +593,7 @@ img {
 }
 
 .read-card {
-    flex: 0 0 260px;
+    flex: 0 0 220px;
     scroll-snap-align: start;
     border: 1px solid var(--border);
     border-radius: 4px;
@@ -587,7 +605,6 @@ img {
     text-align: center;
     transition: border-color 0.3s ease;
 }
-
 
 .read-card:hover {
     border-color: var(--accent);
@@ -606,7 +623,7 @@ img {
 
 .read-card-image {
     width: 80%;
-    height: 260px;
+    height: 220px;
     border: 1px solid var(--border);
     border-radius: 3px;
     overflow: hidden;
